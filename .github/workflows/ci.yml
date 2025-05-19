@@ -51,7 +51,7 @@ jobs:
 
       - name: Install Dependencies
         if: steps.cache.outputs.cache-hit != 'true' 
-        run: cd backend && npm run i
+        run: cd backend && npm i
 
       - name: Lint the code
         run: cd backend && npm run lint
